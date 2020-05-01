@@ -183,6 +183,7 @@ function processObject(object, output, nested) {
 
     output.properties[key] = {}
     output.properties[key].type = type
+    output.properties[key].default = value;
 
     if (format) {
       output.properties[key].format = format
